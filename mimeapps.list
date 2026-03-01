@@ -1,0 +1,10 @@
+[Default Applications]
+x-scheme-handler/pttp=CiscoPacketTracerPtsa-9.0.0.desktop
+application/x-pka=packettracer.desktop
+application/x-pkt=CiscoPacketTracer-9.0.0.desktop
+application/x-pkz=CiscoPacketTracer-9.0.0.desktop
+application/x-pksz=CiscoPacketTracer-9.0.0.desktop
+x-scheme-handler/terminal=kitty.desktop
+
+[Added Associations]
+application/x-pka=packettracer.desktop;

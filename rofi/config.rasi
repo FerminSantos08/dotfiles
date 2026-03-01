@@ -1,0 +1,87 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    drun-display-format: "{name}";
+    font: "Inter 15";
+}
+
+* {
+    bg: #1e1e2e;              /* Catppuccin base */
+    fg: #cdd6f4;              /* Text */
+    accent: #89b4fa;          /* Blue */
+    border-col: #89b4fa;
+    card-bg: #313244;         /* Surface0 */
+}
+
+/* Ventana */
+window {
+    location: center;
+    anchor: center;
+    width: 560px;
+    border: 2px;
+    border-radius: 0px;
+    border-color: @border-col;
+    background-color: @bg;
+}
+
+/* Contenedor */
+mainbox {
+    padding: 16px;
+}
+
+/* Input */
+inputbar {
+    children: [ entry ];
+    background-color: transparent;
+}
+
+entry {
+    placeholder: "Buscar apps...";
+    background-color: #181825;     /* más oscuro que base */
+    text-color: @fg;
+    padding: 12px 14px;
+}
+
+/* Lista */
+listview {
+    lines: 7;
+    columns: 1;
+    dynamic: true;
+    background-color: transparent;
+    spacing: 5px;
+}
+
+/* Normal */
+element normal.normal,
+element alternate.normal {
+    background-color: @card-bg;
+    text-color: @fg;
+    border-radius: 0px;
+    padding: 12px 16px;
+}
+
+/* Hover */
+element normal.active,
+element alternate.active {
+    background-color: #45475a;    /* Surface1 */
+    text-color: @fg;
+    border-radius: 0px;
+}
+
+/* Seleccionado */
+element selected.normal {
+    background-color: @accent;
+    text-color: #1e1e2e;
+    border-radius: 0px;
+}
+
+/* Iconos */
+element-icon {
+    size: 30px;
+    margin: 0 12px 0 0;
+}
+
+/* Texto dentro del elemento */
+element-text {
+    vertical-align: 0.5;
+}
