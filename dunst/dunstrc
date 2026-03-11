@@ -20,16 +20,16 @@ icon_corner_radius = 6
 icon_corners = all
 
 indicate_hidden = yes
-transparency = 40
+transparency = 10
 
 separator_height = 0
 padding = 10
 horizontal_padding = 12
 text_icon_padding = 8
 
-frame_width = 2
+frame_width = 1
 frame_color = "#000000"
-gap_size = 6
+gap_size = 8
 separator_color = frame
 sort = update
 
@@ -62,7 +62,7 @@ always_run_script = true
 title = Dunst
 class = Dunst
 
-corner_radius = 10
+corner_radius = 12
 corners = all
 ignore_dbusclose = false
 force_xwayland = false

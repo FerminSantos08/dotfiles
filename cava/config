@@ -32,14 +32,14 @@ waveform = 0
 background = default
 foreground = default
 gradient = 1
-gradient_color_1 = '#f38ba8'
-gradient_color_2 = '#fab387'
-gradient_color_3 = '#f9e2af'
-gradient_color_4 = '#a6e3a1'
-gradient_color_5 = '#89dceb'
-gradient_color_6 = '#74c7ec'
-gradient_color_7 = '#b4befe'
-gradient_color_8 = '#cba6f7'
+gradient_color_1 = '#ffffff'
+gradient_color_2 = '#d4d4d4'
+gradient_color_3 = '#a3a3a3'
+gradient_color_4 = '#737373'
+gradient_color_5 = '#525252'
+gradient_color_6 = '#404040'
+gradient_color_7 = '#262626'
+gradient_color_8 = '#000000'
 
 [smoothing]
 noise_reduction = 77
