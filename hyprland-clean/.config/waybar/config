@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 4,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/media"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "network",
+    "pulseaudio",
+    "battery",
+    "custom/updates",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "clock": {
+    "format": "{:%H:%M • %a %d/%m}",
+    
+    "tooltip-format": "{:%A %d %B %Y}",
+    "interval": 60
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 5,
+    "tooltip": true
+  },
+
+  "memory": {
+    "format": "  {}%",
+    "interval": 5,
+    "tooltip": true
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C",
+    "interval": 5,
+    "tooltip": true
+  },
+
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀 Ethernet",
+    "format-disconnected": "󰖪 Offline",
+    "tooltip-format": "{ifname} {ipaddr}",
+    "on-click": "nm-connection-editor",
+    "on-click-right": "kitty -e nmtui"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "󰝟",
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "format": "  {capacity}%",
+    "format-charging": " {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "custom/media": {
+  "exec": "~/.config/waybar/scripts/media.sh",
+  "interval": 2,
+  "return-type": "json",
+  "max-length": 35,
+  "tooltip": false
+  },
+
+  "custom/updates": {
+    "exec": "~/.config/waybar/scripts/updates.sh",
+    "interval": 1800,
+    "return-type": "json",
+    "format": "󰏗 {}",
+    "on-click": "kitty -e sudo pacman -Syu"
+  }
+}

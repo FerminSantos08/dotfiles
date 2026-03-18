@@ -1,0 +1,150 @@
+/* -----------------------------
+   GLOBAL
+----------------------------- */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Inter";
+    font-size: 13px;
+    font-weight: 500;
+
+    border: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* -----------------------------
+   WORKSPACES
+----------------------------- */
+
+#workspaces {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 3px 10px;
+    margin: 4px 4px;
+    border-radius: 12px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 0 2px;
+
+    background: transparent;
+    color: #777777;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    color: #cccccc;
+}
+
+#workspaces button.urgent {
+    color: #ff6b6b;
+}
+
+/* -----------------------------
+   MODULOS
+----------------------------- */
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#battery,
+#custom-media,
+#custom-updates,
+#tray {
+
+    background: rgba(0, 0, 0, 0.75);
+
+    padding: 4px 12px;
+    margin: 4px 4px;
+
+    border-radius: 12px;
+
+    color: #dddddd;
+
+    transition: all 0.25s ease;
+}
+
+/* -----------------------------
+   ESTADOS DINAMICOS
+----------------------------- */
+
+/* batería */
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#battery.charging {
+    color: #8bd5ca;
+}
+
+/* red */
+#network.disconnected {
+    color: #f38ba8;
+}
+
+/* audio */
+#pulseaudio.muted {
+    color: #666666;
+}
+
+/* updates */
+#custom-updates.updates {
+    color: #f38ba8;
+}
+
+#custom-updates.updated {
+    color: #a6e3a1;
+}
+
+/* música */
+#custom-media {
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+#custom-media.playing {
+    color: #a6e3a1;
+}
+
+#custom-media.paused {
+    color: #f9e2af;
+}
+
+#custom-media.changed {
+    background: rgba(166, 227, 161, 0.15);
+}
+
+/* -----------------------------
+   HOVER
+----------------------------- */
+
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-media:hover,
+#custom-updates:hover,
+#tray:hover {
+
+    background: rgba(255, 255, 255, 0.06);
+}

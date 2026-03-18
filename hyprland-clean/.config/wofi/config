@@ -1,0 +1,17 @@
+width=600
+height=420
+location=center
+
+show=drun
+prompt=  Buscar...
+
+lines=8
+columns=1
+
+allow_images=true
+term=kitty
+
+layer=overlay
+no_actions=true
+
+style=/home/fermin/.config/wofi/style.css

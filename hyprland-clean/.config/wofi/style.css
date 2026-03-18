@@ -1,0 +1,63 @@
+* {
+    font-family: "Inter", "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+/* ventana principal */
+
+window {
+    background: rgba(0,0,0,0.85);
+    border-radius: 16px;
+    border: 2px solid rgba(255,255,255,0.08);
+}
+
+/* contenedor general */
+
+#outer-box {
+    margin: 14px;
+}
+
+/* barra de búsqueda */
+
+#input {
+    background: rgba(20,20,20,0.85);
+    color: #ffffff;
+
+    border-radius: 12px;
+    border: none;
+
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+/* lista */
+
+#scroll {
+    margin-top: 4px;
+}
+
+/* cada entrada */
+
+#entry {
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+/* item seleccionado */
+
+#entry:selected {
+    background: rgba(255,255,255,0.08);
+}
+
+/* texto */
+
+#text {
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+/* iconos */
+
+#img {
+    margin-right: 8px;
+}
